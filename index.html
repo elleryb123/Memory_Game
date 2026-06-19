@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Memory Game for Kids!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin: 0; padding: 20px;">
+    <!-- Start Screen - Difficulty Selection -->
+    <div id="start-screen" class="screen active">
+        <h1 style="text-align: center; margin-bottom: 40px;">Memory Game!</h1>
+        <div id="difficulty-container" style="text-align: center;">
+            <p style="font-size: 18px; margin-bottom: 20px;">Select Difficulty:</p>
+            <button class="difficulty-btn" data-level="0">Easy</button>
+            <button class="difficulty-btn" data-level="1">Medium</button>
+            <button class="difficulty-btn" data-level="2">Hard</button>
+        </div>
+    </div>
+    
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <!-- Score display -->
+        <h1 id="score-board" style="text-align: center;">Memory Game!</h1>
+        
+        <!-- Your game will live in this container -->
+        <div id="game-container"></div>
+        
+        <!-- Restart button -->
+        <div style="text-align: center; margin-top: 30px;">
+            <button id="restart-btn">Restart Game</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

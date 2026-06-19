@@ -1,0 +1,128 @@
+/* Memory Game - Kid-Friendly Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff; /* White background as requested */
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#game-container {
+    width: 95%; /* Almost full screen on mobile */
+    max-width: 640px; /* Limits size on tablets/desktops */
+}
+
+/* Screen management */
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.memory-grid {
+    display: grid;
+    gap: 8px;
+}
+
+.memory-card {
+    aspect-ratio: 1 / 1.2; /* Rectangle shape roughly like playing cards or game pieces */
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    background: #ADD8E6;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    user-select: none;
+}
+
+.memory-card.flipped {
+    background: #d3d3d3;
+}
+
+.memory-card.matched {
+    background-color: #FFD700;
+    cursor: default;
+}
+
+.memory-card.disappear {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.card-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.memory-grid {
+    display: grid;
+    gap: 8px;
+}
+
+.memory-grid.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.memory-grid.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.memory-grid.grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.memory-grid.grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.memory-grid .memory-card {
+    min-height: 78px; 
+    max-width: 145px;
+}
+
+/* Button styling */
+.difficulty-btn, #restart-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.difficulty-btn:hover, #restart-btn:hover {
+    background-color: #45a049;
+}
+
+.difficulty-btn.active {
+    background-color: #2196F3;
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
