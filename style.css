@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ffffff; /* White background as requested */
+    background: linear-gradient(90deg, #FFB3BA 0%, #FFCAB0 16.66%, #FFFFBA 33.33%, #BAE1BA 50%, #BAC7FF 66.66%, #E1BAFF 100%);
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
     display: flex;
