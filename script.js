@@ -8,21 +8,21 @@
 const GAME_CONFIG = {
   // Card image paths for Paw Patrol and other characters
   CARD_IMAGES: [
-    'Images/Abra.png',
-    'Images/bulbasaur.png',
-    'Images/Caterpie.png',
-    'Images/Charizard.png',
-    'Images/Charmander.png',
-    'Images/Flareon.png',
-    'Images/Ivysaur.png',
-    'Images/Jolteon.png',
-    'Images/Lugia.png',
-    'Images/Marill.png',
-    'Images/Mew.png',
-    'Images/Squirtle.png',
-    'Images/Tepig.png',
-    'Images/Totodile.png',
-    'Images/Typhlosion.png'
+      'Images/Chase.png',
+      'Images/Everest.png',
+      'Images/Green.png',
+      'Images/Luigi.png',
+      'Images/Mario Racoon.png',
+      'Images/Mario.png',
+      'Images/Marshall.png',
+      'Images/paw patrol gang.png',
+      'Images/Paw Patrol Symbol.png',
+      'Images/Rocky.png',
+      'Images/rubble.png',
+      'Images/Ryder.png',
+      'Images/Skye.png',
+      'Images/spiderman-png-47353.png',
+      'Images/Zuma.png'
   ],
   
   // Difficulty levels with grid sizes for mobile display
