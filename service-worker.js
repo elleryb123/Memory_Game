@@ -1,11 +1,26 @@
 // Service Worker for Memory Game PWA
-const CACHE_NAME = 'memory-game-v1';
+const CACHE_NAME = 'memory-game-v2';
 const urlsToCache = [
   '/Memory_Game/',
   '/Memory_Game/index.html',
   '/Memory_Game/script.js',
   '/Memory_Game/style.css',
-  '/Memory_Game/manifest.json'
+  '/Memory_Game/manifest.json',
+  '/Memory_Game/Images/Chase.png',
+  '/Memory_Game/Images/Everest.png',
+  '/Memory_Game/Images/Green.png',
+  '/Memory_Game/Images/Luigi.png',
+  '/Memory_Game/Images/Mario Racoon.png',
+  '/Memory_Game/Images/Mario.png',
+  '/Memory_Game/Images/Marshall.png',
+  '/Memory_Game/Images/paw patrol gang.png',
+  '/Memory_Game/Images/Rocky.png',
+  '/Memory_Game/Images/rubble.png',
+  '/Memory_Game/Images/Ryder.png',
+  '/Memory_Game/Images/Skye.png',
+  '/Memory_Game/Images/spiderman-png-47353.png',
+  '/Memory_Game/Images/Zuma.png',
+  '/Memory_Game/Images/Paw Patrol Symbol.png'
 ];
 
 // Install event - cache resources

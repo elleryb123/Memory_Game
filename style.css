@@ -47,6 +47,15 @@ body {
     justify-content: center;
     font-size: 3rem;
     user-select: none;
+    min-width: 60px;
+    min-height: 72px;
+}
+
+.memory-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
 }
 
 .memory-card.flipped {

@@ -8,21 +8,21 @@
 const GAME_CONFIG = {
   // Card image paths for Paw Patrol and other characters
   CARD_IMAGES: [
-    'images/Chase.png',
-    'images/Everest.png',
-    'images/Green.png',
-    'images/Luigi.png',
-    'images/Mario Racoon.png',
-    'images/Mario.png',
-    'images/Marshall.png',
-    'images/paw patrol gang.png',
-    'images/Rocky.png',
-    'images/rubble.png',
-    'images/Ryder.png',
-    'images/Skye.png',
-    'images/spiderman-png-47353.png',
-    'images/Zuma.png',
-    'images/Paw Patrol Symbol.png'
+    'Images/Chase.png',
+    'Images/Everest.png',
+    'Images/Green.png',
+    'Images/Luigi.png',
+    'Images/Mario Racoon.png',
+    'Images/Mario.png',
+    'Images/Marshall.png',
+    'Images/paw patrol gang.png',
+    'Images/Rocky.png',
+    'Images/rubble.png',
+    'Images/Ryder.png',
+    'Images/Skye.png',
+    'Images/spiderman-png-47353.png',
+    'Images/Zuma.png',
+    'Images/Paw Patrol Symbol.png'
   ],
   
   // Difficulty levels with grid sizes for mobile display
@@ -159,7 +159,7 @@ function handleCardClick(event) {
 function flipCardVisuals(cardElement, isFaceUp) {       // Toggle between showing front/back of each game piece/card face  
   if (isFaceUp) {                                       // Show the actual image content stored in data attribute!
     cardElement.classList.add('flipped');              // Add 'flipped' CSS class that rotates it open
-    cardElement.innerHTML = `<img src="${cardElement.dataset.image}" alt="card" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">`;  // Show the image
+    cardElement.innerHTML = `<img src="${cardElement.dataset.image}" alt="card">`;  // Show the image
   } else {                                              // Hide/flip back to show pattern design on reverse side of card element when not face up yet
     cardElement.classList.remove('flipped');           // Remove flipped class from DOM node so user can't see image underneath
     cardElement.innerHTML = '<div class="card-back"></div>'; // Show the back design
